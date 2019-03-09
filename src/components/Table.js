@@ -4,12 +4,15 @@ import TableBody from './TableBody';
 
 class Table extends Component {
     render() {
+
+      const { characterData } = this.props;
+
         return (
             <div className="row">
                 <div className="col">
                 <table className="table">
                     <TableHead />
-                    <TableBody />
+                    <TableBody characterData={characterData} />
                 </table>
                 </div>
             </div>
